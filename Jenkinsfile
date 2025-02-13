@@ -33,7 +33,7 @@ pipeline {
         stage('Static Code Analysis (SAST)') {
             steps {
                 script {
-                    withCredentials([string(credentialsId: 'sonarqube-api-key', variable: 'SONAR_TOKEN')]) {
+                    withCredentials([string(credentialsId: 'sonarqube-api-key', variable: '67dd1d1e4e1b12ee53d75ec67bc14d6e091401be')]) {
                         def scanStatus = sh(script: '''
                             ${SONAR_SCANNER_HOME}/bin/sonar-scanner \
                             -Dsonar.projectKey=daddy-o_aws-pipeline \
