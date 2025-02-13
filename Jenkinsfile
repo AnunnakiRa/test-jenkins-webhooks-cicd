@@ -29,7 +29,7 @@ pipeline {
             }
         }
 
-        // Security Scans
+        // Security Scans 
         stage('Static Code Analysis (SAST)') {
             steps {
                 script {
